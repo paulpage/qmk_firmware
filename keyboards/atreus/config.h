@@ -30,17 +30,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     q.m.k. keyboard firmware for Atreus
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 12
+#define MATRIX_ROWS 7
+#define MATRIX_COLS 10
 
 // Change this to how you wired your keyboard
 // COLS: Left to right, ROWS: Top to bottom
-#define MATRIX_ROW_PINS { B5, B4, B2, B6 }
-#define MATRIX_COL_PINS { F4, F5, F6, F7, B1, B3, E6, C6, D7, D4, D0, D1 }
-#define UNUSED_PINS { D3, D2 }
+#define MATRIX_ROW_PINS { D7, E6, C6, B4, F7, F6, F5 }
+#define MATRIX_COL_PINS { D3, D2, D1, D0, F4, B1, B3, B2, B6, D4 }
+#define UNUSED_PINS { B5 }
 
 /* COL2ROW or ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
