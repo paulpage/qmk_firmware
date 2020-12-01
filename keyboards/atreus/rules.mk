@@ -52,11 +52,7 @@ F_USB = $(F_CPU)
 #     This definition is optional, and if your keyboard supports multiple bootloaders of
 #     different sizes, comment this out, and the correct address will be loaded 
 #     automatically (+60). See bootloader.mk for all options.
-ifdef TEENSY2
-    BOOTLOADER = halfkay
-else
-    BOOTLOADER = caterina
-endif
+BOOTLOADER = halfkay
 
 # Interrupt driven control endpoint task(+60)
 OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
